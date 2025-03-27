@@ -167,6 +167,11 @@ function Log.new(localScript)
             -- end
 
             -- script decompilation here
+            if decompile then
+                InfoSource.text = 1
+            else
+                print('Decompile not found')
+            end
 
             selected.scriptLog = log
         end
