@@ -170,7 +170,7 @@ function Log.new(localScript)
             if decompile then
                 InfoSource.text = 1
             else
-                print('Decompile not found')
+                InfoSource.text = 'Decompiler not found'
             end
 
             selected.scriptLog = log
