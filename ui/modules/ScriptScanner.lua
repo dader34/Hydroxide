@@ -232,6 +232,7 @@ for _i, sectionButton in pairs(InfoOptions:GetChildren()) do
         local leaveAnimation = TweenService:Create(label, constants.fadeLength, { TextTransparency = 0.2 })
 
         sectionButton.MouseButton1Click:Connect(function()
+            print(sectionButton.Name)
             local section = InfoSections:FindFirstChild(sectionButton.Name)
             animationCache[selectedSectionButton].leave:Play()
             
