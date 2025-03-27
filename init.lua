@@ -211,7 +211,6 @@ if readFile and writeFile then
         end
 
         function environment.import(asset)
-            print(asset)
             if importCache[asset] then
                 return unpack(importCache[asset])
             end
@@ -254,7 +253,6 @@ if readFile and writeFile then
         writeFile("__oh_version.txt", releaseInfo.tag_name)
     elseif ran and releaseInfo.tag_name == result then
         function environment.import(asset)
-            print(asset)
             if importCache[asset] then
                 return unpack(importCache[asset])
             end
