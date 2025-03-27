@@ -227,6 +227,7 @@ local animationCache = {}
 
 for _i, sectionButton in pairs(InfoOptions:GetChildren()) do
     if sectionButton:IsA("TextButton") then
+        print(sectionButton.name)
         local label = sectionButton.Label
         local enterAnimation = TweenService:Create(label, constants.fadeLength, { TextTransparency = 0 })
         local leaveAnimation = TweenService:Create(label, constants.fadeLength, { TextTransparency = 0.2 })
