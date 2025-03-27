@@ -166,15 +166,6 @@ function Log.new(localScript)
             --     createEnvironment(i, v)
             -- end
 
-            print(8888888)
-
-            -- script decompilation here
-            if decompile then
-                InfoSource.text = 1
-            else
-                InfoSource.text = 'Decompiler not found'
-            end
-
             selected.scriptLog = log
         end
     end)
@@ -224,8 +215,9 @@ end)
 local selectedSection = InfoProtos
 local selectedSectionButton = InfoOptions.Protos
 local animationCache = {}
-
+print(InfoOptions)
 for _i, sectionButton in pairs(InfoOptions:GetChildren()) do
+    print(11111)
     if sectionButton:IsA("TextButton") then
         print(sectionButton.name)
         local label = sectionButton.Label
