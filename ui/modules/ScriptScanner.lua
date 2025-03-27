@@ -166,6 +166,8 @@ function Log.new(localScript)
             --     createEnvironment(i, v)
             -- end
 
+            print(8888888)
+
             -- script decompilation here
             if decompile then
                 InfoSource.text = 1
