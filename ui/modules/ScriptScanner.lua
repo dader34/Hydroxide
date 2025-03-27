@@ -162,9 +162,9 @@ function Log.new(localScript)
                 createConstant(i, v)
             end
 
-            -- for i,v in pairs(localScript.Environment) do
-            --     createEnvironment(i, v)
-            -- end
+            for i,v in pairs(localScript.Environment) do
+                createEnvironment(i, v)
+            end
 
             selected.scriptLog = log
         end
